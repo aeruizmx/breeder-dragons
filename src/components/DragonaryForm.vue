@@ -4,7 +4,7 @@
       <h1 class="text-center">BREEDENATOR</h1>
     </div>
     <div class="row">
-      <div class="col-2">
+      <div class="col-md-2">
         <div class="card">
           <div class="card-header">Nuevo dragón</div>
           <div class="card-body">
@@ -28,11 +28,11 @@
           </div>
         </div>
       </div>
-      <div class="col-10">
+      <div class="col-md-10">
         <div class="card">
           <div class="card-header">Lista de Dragones</div>
           <div class="card-body">
-            <b-table striped hover :items="dragons" show-empty small>
+            <b-table striped hover :items="dragons" show-empty small responsive>
               <template #cell(element)="item">
                 <span :class="[item.item.element]">{{item.item.element}}</span>
               </template>
@@ -47,7 +47,7 @@
         <div class="card">
           <div class="card-header">Generaciones</div>
           <div class="card-body">
-            <b-table striped hover :items="breed_dragons" show-empty small>
+            <b-table striped hover :items="breed_dragons" show-empty small responsive>
               <template #cell(element)="item">
                 <span :class="[item.item.element]">{{item.item.element}}</span>
               </template>

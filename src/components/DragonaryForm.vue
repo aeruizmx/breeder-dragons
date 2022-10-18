@@ -21,7 +21,7 @@
               <option v-for="element in elements" :key="element.id" :value="element.element">{{element.element}}</option>
             </select>
             <div class="d-grid">
-              <button :disabled="dragons.length > 2" class="btn btn-primary my-1" @click="addDragon">Guardar</button>
+              <button :disabled="dragons.length >= 2" class="btn btn-primary my-1" @click="addDragon">Guardar</button>
               <button class="btn btn-success my-1" @click="breedDragons">Breedear</button>
               <button class="btn btn-danger my-1" @click="clear">Borrar</button>
             </div>
